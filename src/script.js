@@ -2,12 +2,14 @@ import { helpers } from "./helpers.js";
 
 async function renderWeatherDataResponse() {
   const {
+    functionReturn,
     getForecastDataJson,
     getCurrentHour,
     getCurrentTemperature,
     getCurrentRelativeHumidity,
     getCurrentWindSpeed10m,
     getCurrentRain,
+    getIconClass,
     renderForecastData,
   } = {
     ...helpers,
@@ -27,6 +29,7 @@ async function renderWeatherDataResponse() {
   const currentRain = getCurrentRain(weatherData, currentHour);
 
   renderForecastData(
+    getIconClass,
     currentTemperature,
     currentRelativeHumidity,
     currentWindSpeed10m,

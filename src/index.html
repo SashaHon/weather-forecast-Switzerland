@@ -5,38 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swiss Weather Forecast 🇨🇭</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <main>
-        <h1>Weather Forecast</h1>
-        <h2>probable subtitle</h2>
-        <p>Some intoductory p section describing something about this forecast or where to watch</p>
-        <!-- <form action="#">
-            <legend>Enter a city you're looking forecast for</legend>
-            <input type="text">
-            <input type="submit">
-        </form> -->
+        <header class="background-image">
+            <div class="title-background">
+                <h1>🇨🇭Swiss🇨🇭 Current Weather Forecast</h1>
+                <h2>The forecast is presentend according to current time</h2>
+            </div>
+        </header>
+        <!-- <section class="container">
+            <form action="#">
+                <legend>Enter a city you're looking forecast for</legend>
+                <input type="text">
+                <input type="submit">
+            </form>
+        </section> -->
+        <section class="grid container">
+            <article>
+                <h3>Temperature</h3>
+                <div id="icon-temperature" class="icon"></div>
+                <p id="temperature"></p>
+            </article>
 
-        <div class="grid forecast-container">
-            <h3>Current temperature in Switzerland</h3>
-            <img src="#" alt="img_related to temperature">
-            <p id="temperature"></p>
+            <article>
+                <h3>Humidity</h3>
+                <div id="icon-humidity" class="icon"></div>
+                <p id="relativeHumidity"></p>
+            </article>
 
-            <h3>Humidity</h3>
-            <img src="#" alt="img_related to humidity">
-            <p id="relativeHumidity"></p>
+            <article>
+                <h3>Rain</h3>
+                <div id="icon-rain" class="icon"></div>
+                <p id="rain"></p>
+            </article>
 
-            <h3>Wind</h3>
-            <img src="#" alt="img_related to wind">
-            <p id="windSpeed">Some text from javascript fetch</p>
-
-            <h3>Rain</h3>
-            <img src="#" alt="img_related to this section">
-            <p id="rain">Some text from javascrip fetch</p>
-        </div>
+            <article>
+                <h3>Wind</h3>
+                <div id="icon-wind" class="icon w-wind"></div>
+                <p id="windSpeed"></p>
+            </article>
+        </section>
     </main>
+    <footer>
+        <ol><b>Upcoming features:</b>
+            <li class="mt-1rem">add current time and date in Switzerland</li>
+            <li>choose city or country for current forecast data</li>
+            <li>change background image according to the season</li>
+            <li>add forecast for next 3 days, weak</li>
+        </ol>
+        <p>Stay tuned for more features!</p>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="script.js" type="module" defer></script>
 </body>
 

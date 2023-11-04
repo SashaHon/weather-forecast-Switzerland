@@ -1,0 +1,56 @@
+/* .temperature .very-high {
+    background: url('https://api.iconify.design/mingcute/high-temperature-fill.svg') no-repeat center center / contain;
+} */
+
+.t-very-high {
+    content: url('https://api.iconify.design/mingcute/high-temperature-fill.svg');
+}
+
+.t-high {
+    content: url('https://api.iconify.design/mdi/temperature-high.svg');
+}
+
+.t-normal {
+    content: url('https://api.iconify.design/mdi/temperature.svg');
+    
+}
+
+.t-low {
+    content: url('https://api.iconify.design/fluent/temperature-16-filled.svg');
+}
+
+.t-very-low {
+    content: url('https://api.iconify.design/mingcute/low-temperature-line.svg');
+}
+
+.h-high {
+    content: url('https://api.iconify.design/material-symbols/humidity-high.svg');
+}
+
+.h-normal {
+    content: url('https://api.iconify.design/material-symbols/humidity-mid.svg');
+}
+
+.h-low {
+    content: url('https://api.iconify.design/material-symbols/humidity-low.svg');
+}
+
+.r-rain {
+    content: url('https://api.iconify.design/humbleicons/rain.svg');
+}
+
+.r-cloud-sun-rain {
+    content: url('https://api.iconify.design/fa6-solid/cloud-sun-rain.svg');
+}
+
+.r-cloud {
+    content: url('https://api.iconify.design/material-symbols/cloud-outline.svg');
+}
+
+.r-sun {
+    content: url('https://api.iconify.design/ph/sun-bold.svg');
+}
+
+.w-wind {
+    content: url('https://api.iconify.design/mingcute/wind-line.svg');
+}
